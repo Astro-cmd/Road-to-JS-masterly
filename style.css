@@ -1,0 +1,131 @@
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.reveal {
+    display: block;
+}
+```css
+/* =========================
+   General Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+/* =========================
+   Sports Container
+========================= */
+
+#sports {
+    list-style: none;
+    width: 350px;
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   Sports Items
+========================= */
+
+#sports li {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+
+    background: #f0f2f5;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+/* Remove margin from last item */
+
+#sports li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Hover Effect
+========================= */
+
+#sports li:hover {
+    background: #222;
+    color: white;
+
+    transform: translateX(8px);
+}
+
+
+/* =========================
+   Individual Sports
+========================= */
+
+#football {
+    border-left: 5px solid #2ecc71;
+}
+
+#basketball {
+    border-left: 5px solid #f39c12;
+}
+
+#boxing {
+    border-left: 5px solid #e74c3c;
+}
+
+#tennis {
+    border-left: 5px solid #3498db;
+}
+
+#golf {
+    border-left: 5px solid #27ae60;
+}
+#rugby{
+    border-right: #f39c12;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 500px) {
+
+    #sports {
+        width: 90%;
+    }
+
+    #sports li {
+        font-size: 16px;
+    }
+}
+```
