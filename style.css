@@ -5,7 +5,6 @@
 .hidden-content.reveal {
     display: block;
 }
-```css
 /* =========================
    General Reset
 ========================= */
@@ -111,7 +110,7 @@ body {
     border-left: 5px solid #27ae60;
 }
 #rugby{
-    border-right: #f39c12;
+    border-right: 5px solid #f39c12;
 }
 
 /* =========================
@@ -128,4 +127,3 @@ body {
         font-size: 16px;
     }
 }
-```
