@@ -72,7 +72,7 @@ body {
 }
 
 /* Modal animation Section */
-@keyframes animatembasodal{
+@keyframes animatemodal{
     from {
         top: -300px;
         opacity: 0;
