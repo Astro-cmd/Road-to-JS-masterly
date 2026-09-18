@@ -5,7 +5,10 @@ const taskContainer = document.getElementById('task-container');
 const inputTask = document.getElementById('input-task')
 
 // event listener for add button
-addTask.addEventListener('click', function () {
+// function for adding the task
+
+function createtask(){
+    
 
     let task = document.createElement('div');
     task.classList.add('task');
@@ -42,6 +45,15 @@ addTask.addEventListener('click', function () {
         target.parentElement.parentElement.remove()
     })
 
+}
+// button addevntlistener
+addTask.addEventListener('click', function () {
+    createtask();
+});
 
-
+inputTask.addEventListener('keydown', function (e) {
+    if (e.key === "Enter") {
+        
+        createtask();
+    }
 });
