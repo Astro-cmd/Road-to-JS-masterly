@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice: Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Sign up</h1>
+
+  <!--
+    PRACTICE TASKS — add these yourself, one at a time:
+    1. Add HTML5 validation attributes to each field below
+       (required, type, pattern, minlength/maxlength, min/max).
+    2. In CSS, style :invalid / :valid states (careful with
+       :not(:placeholder-shown) so empty fields don't look broken).
+    3. In JS, listen for 'input' on each field, read el.validity,
+       and write a custom message into the matching .error-msg span.
+    4. Make the confirm-password field use setCustomValidity() to
+       check it matches the password field.
+    5. Prevent the default submit, call form.checkValidity(), and
+       only show a success message if it passes.
+  -->
+
+  <form novalidate id="signup-form">
+
+    <div class="field">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" placeholder="Your name">
+      <span class="error-msg" data-error-for="name"></span>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text" placeholder="you@example.com">
+      <span class="error-msg" data-error-for="email"></span>
+    </div>
+
+  <div id="field">
+    <label for="adress">Address</label>
+    <input id = "address" type="text" name="address" placeholder="Your City">
+    <span class = "error-msg" data-error-for="address"></span>
+  </div>
+
+    <div class="field">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" placeholder="3-16 characters">
+      <span class="error-msg" data-error-for="username"></span>
+    </div>
+
+    <div class="field">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="text" placeholder="07XX XXX XXX">
+      <span class="error-msg" data-error-for="phone"></span>
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="min 8 characters">
+      <span class="error-msg" data-error-for="password"></span>
+    </div>
+
+    <div class="field">
+      <label for="confirm">Confirm password</label>
+      <input id="confirm" name="confirm" type="password" placeholder="repeat password">
+      <span class="error-msg" data-error-for="confirm"></span>
+    </div>
+
+    <div class="field">
+      <label for="bio">Short bio</label>
+      <textarea id="bio" name="bio" placeholder="Max 160 characters"></textarea>
+      <span class="error-msg" data-error-for="bio"></span>
+    </div>
+
+    <div class="field">
+      <label>
+        <input type="checkbox" id="terms" name="terms">
+        I agree to the terms
+      </label>
+      <span class="error-msg" data-error-for="terms"></span>
+    </div>
+
+    <button type="submit">Create account</button>
+
+  </form>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

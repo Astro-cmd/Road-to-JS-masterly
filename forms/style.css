@@ -1,0 +1,46 @@
+  body { font-family: sans-serif; 
+    max-width: 480px; 
+    margin:auto; 
+    padding: 0 1rem; }
+
+.field { margin-bottom: 8px; 
+}
+
+label { display: block; 
+    margin-bottom: 0.3rem; 
+    font-size: 0.9rem; 
+}
+
+input, textarea { width: 100%; 
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    box-sizing: border-box; }
+
+.error-msg { color: red; 
+    font-size: 0.8rem; display: block; 
+    min-height: 1em;
+ }
+
+button { padding: 0.6rem 1.2rem; 
+    font-size: 1rem; 
+} 
+/* Base input styling */
+input,
+textarea {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Only show validation styles once the user has entered something */
+input:not(:placeholder-shown):valid,
+textarea:not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+/* Error messages */
